@@ -8,6 +8,12 @@ namespace PrimeiroProjetoMVC5
       // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
       public static void RegisterBundles(BundleCollection bundles)
       {
+         BundleTable.EnableOptimizations = true;
+
+         bundles.Add(new ScriptBundle("~/bundles/testes").Include(
+            "~/Scripts/teste1.js",
+            "~/Scripts/teste2.js"));
+
          bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                      "~/Scripts/jquery-{version}.js"));
 

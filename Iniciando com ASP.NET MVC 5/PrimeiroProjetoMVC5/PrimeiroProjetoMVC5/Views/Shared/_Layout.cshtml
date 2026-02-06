@@ -8,6 +8,9 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+
+   @Html.AntiForgeryToken()
+
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -37,6 +40,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/teste")
     @RenderSection("scripts", required: false)
 </body>
 </html>

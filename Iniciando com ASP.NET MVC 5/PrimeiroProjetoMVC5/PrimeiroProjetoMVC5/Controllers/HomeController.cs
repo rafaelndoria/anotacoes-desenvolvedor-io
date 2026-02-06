@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace PrimeiroProjetoMVC5.Controllers
 {
+   [ValidateAntiForgeryToken]
    public class HomeController : Controller
    {
       public ActionResult Index()
